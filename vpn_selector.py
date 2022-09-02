@@ -3,12 +3,13 @@
 import os
 import argparse
 
-parser = argparse.ArgumentParser(description='Process some integers.')
-parser.add_argument('thm',help="start the vpn for thm in a new ternminal", )
-parser.add_argument('htb',help="start the vpn for htb in a new ternminal", )
+parser = argparse.ArgumentParser()
+parser.add_argument("-v", "--vpn", type=str, default="Default value", help="to choose the vpn")
 args = parser.parse_args()
 
-if args.htb:
+
+
+if args.vpn == "htb":
 	os.system('gnome-terminal -- bash -c "openvpn /usr/share/vpn/htb_vpn.ovpn"')
-if args.thm:
+if args.vpn == "thm":
 	os.system('gnome-terminal -- bash -c "openvpn /usr/share/vpn/thm_vpn.ovpn"')
