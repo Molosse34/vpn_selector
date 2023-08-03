@@ -39,13 +39,13 @@ if args.change == True:
 
 
 if args.vpn == "htb":
-	try:
-		 os.system(f'gnome-terminal -- bash -c "openvpn {a}"')
-	finally:
-		print("wrong path")
+	#try:
+	os.system(f'bash -c "openvpn {a}"')
+	#except SyntaxError:
+	#	print("wrong path")
 
 elif args.vpn == "thm":
-	try:
-		os.system(f'gnome-terminal -- bash -c "openvpn {b}"')
-	finally:
-		print('wrong path')
+	#try:
+	os.system(f'bash -c "openvpn {b}"')
+	#except SyntaxError:
+	#	print('wrong path')
