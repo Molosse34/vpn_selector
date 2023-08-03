@@ -39,13 +39,13 @@ if args.change == True:
 
 
 if args.vpn == "htb":
-	#try:
+	try:
 	os.system(f'bash -c "openvpn {a}"')
-	#except SyntaxError:
-	#	print("wrong path")
+	except SyntaxError:
+		print("wrong path")
 
 elif args.vpn == "thm":
-	#try:
+	try:
 	os.system(f'bash -c "openvpn {b}"')
-	#except SyntaxError:
-	#	print('wrong path')
+	except SyntaxError:
+		print('wrong path')
