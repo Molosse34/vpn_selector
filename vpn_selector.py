@@ -40,7 +40,7 @@ if not os.path.exists('/opt/vpn_selector/chemin_vpn_htb.json'):
         json.dump({}, file)
 
 if not os.path.exists('/opt/vpn_selector/chemin_vpn_thm.json'):
-    with open('/opt/vpn_selctor/chemin_vpn_thm.json', 'w') as file:
+    with open('/opt/vpn_selector/chemin_vpn_thm.json', 'w') as file:
         json.dump({}, file)
 
 
